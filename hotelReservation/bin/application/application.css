@@ -1,0 +1,116 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #e0f7fa, #ffffff);
+}
+
+.app-logo {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-padding: 20 0 10 0;
+    -fx-text-fill: #032859;
+}
+
+.welcome-text {
+    -fx-font-size: 24px;
+    -fx-padding: 0 0 20 0;
+    -fx-text-fill: #032859;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 10 10 10 10;
+    -fx-background-color: white;
+    -fx-border-color: #08678C;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button {
+    -fx-font-size: 16px;
+    -fx-background-color: #08678C;
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #074973;
+}
+.scroll-pane .viewport {
+    -fx-padding: 0;
+}
+.scroll-pane .scroll-bar:vertical, .scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-padding: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+}
+
+.submit-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #4CAF50; /* Green color */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #388E3C; /* Darker green for the border */
+    -fx-border-width: 1;
+}
+.submit-button:hover {
+    -fx-background-color: #388E3C; /* Darker green on hover */
+}
+.submit-button:pressed {
+    -fx-background-color: #2E7D32; /* Even darker green when pressed */
+}
+
+
+.clear-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #FFC107; /* Amber color */
+    -fx-text-fill: black;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #FFA000; /* Darker amber for the border */
+    -fx-border-width: 1;
+}
+.clear-button:hover {
+    -fx-background-color: #FFA000; /* Darker amber on hover */
+}
+.clear-button:pressed {
+    -fx-background-color: #FF8F00; /* Even darker amber when pressed */
+}
+
+.cancel-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #F44336; /* Red color */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #D32F2F; /* Darker red for the border */
+    -fx-border-width: 1;
+}
+.cancel-button:hover {
+    -fx-background-color: #D32F2F; /* Darker red on hover */
+}
+.cancel-button:pressed {
+    -fx-background-color: #B71C1C; /* Even darker red when pressed */
+}
+
+.close-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #9E9E9E; /* Gray color */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #757575; /* Darker gray for the border */
+    -fx-border-width: 1;
+}
+.close-button:hover {
+    -fx-background-color: #757575; /* Darker gray on hover */
+}
+.close-button:pressed {
+    -fx-background-color: #616161; /* Even darker gray when pressed */
+}

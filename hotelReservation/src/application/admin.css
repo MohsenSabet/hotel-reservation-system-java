@@ -1,0 +1,193 @@
+/* General styles */
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 20px;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark Gray Text */
+}
+
+.label {
+    -fx-text-fill: #333333; /* Dark Gray Text */
+}
+
+.text-field, .combo-box, .spinner {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #DDDDDD; /* Light Gray Border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 6px;
+    -fx-text-fill: #333333; /* Dark Gray Text */
+}
+
+.button {
+    -fx-background-color: #333333; /* Dark Gray Background */
+    -fx-text-fill: #FFFFFF; /* White Text */
+    -fx-border-color: transparent;
+    -fx-border-radius: 4px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #444444; /* Slightly Lighter Gray */
+}
+
+.button:disabled {
+    -fx-background-color: #AAAAAA; /* Gray for Disabled Button */
+    -fx-cursor: default;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #DDDDDD; /* Light Gray Border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #F0F0F0; /* Light Background for Header */
+    -fx-border-color: #DDDDDD; /* Light Gray Border */
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-view .cell {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #DDDDDD; /* Light Gray Border */
+    -fx-border-width: 0 0 1px 0;
+}
+
+.date-picker {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #DDDDDD; /* Light Gray Border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 6px;
+}
+
+.spinner {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #DDDDDD; /* Light Gray Border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 6px;
+}
+
+.hbox, .vbox {
+    -fx-spacing: 10px;
+}
+
+.grid-pane {
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}
+
+.submit-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #08678C; /* Same blue as the default button */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #074973; /* Slightly darker blue for the border */
+    -fx-border-width: 1;
+}
+.submit-button:hover {
+    -fx-background-color: #074973; /* Darker blue on hover */
+}
+.submit-button:pressed {
+    -fx-background-color: #053355; /* Even darker blue when pressed */
+}
+.proceed-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #08678C; /* Same blue as the default button */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #074973; /* Slightly darker blue for the border */
+    -fx-border-width: 1;
+}
+.proceed-button:hover {
+    -fx-background-color: #074973; /* Darker blue on hover */
+}
+.proceed-button:pressed {
+    -fx-background-color: #053355; /* Even darker blue when pressed */
+}
+
+.clear-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #08678C; /* Same blue as the default button */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #074973; /* Slightly darker blue for the border */
+    -fx-border-width: 1;
+}
+.clear-button:hover {
+    -fx-background-color: #074973; /* Darker blue on hover */
+}
+.clear-button:pressed {
+    -fx-background-color: #053355; /* Even darker blue when pressed */
+}
+.cancel-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #08678C; /* Same blue as the default button */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #074973; /* Slightly darker blue for the border */
+    -fx-border-width: 1;
+}
+.cancel-button:hover {
+    -fx-background-color: #074973; /* Darker blue on hover */
+}
+.cancel-button:pressed {
+    -fx-background-color: #053355; /* Even darker blue when pressed */
+}
+.close-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #08678C; /* Same blue as the default button */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #074973; /* Slightly darker blue for the border */
+    -fx-border-width: 1;
+}
+.close-button:hover {
+    -fx-background-color: #074973; /* Darker blue on hover */
+}
+.close-button:pressed {
+    -fx-background-color: #053355; /* Even darker blue when pressed */
+}
+.back-button {
+    -fx-font-size: 16px;
+    -fx-background-color: #08678C; /* Same blue as the default button */
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #074973; /* Slightly darker blue for the border */
+    -fx-border-width: 1;
+}
+.back-button:hover {
+    -fx-background-color: #074973; /* Darker blue on hover */
+}
+.back-button:pressed {
+    -fx-background-color: #053355; /* Even darker blue when pressed */
+}

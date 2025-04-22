@@ -1,0 +1,532 @@
+/* Root */
+.root {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the background */
+}
+
+/* Label */
+.label {
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+}
+
+/* Pane */
+.pane-grid {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the background */
+}
+
+/* GridPane */
+.tab-pane-grid {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the background */
+    -fx-background-insets: 3 0 0 0;
+}
+
+/* TextField */
+.text-field {
+    -fx-background-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+    -fx-highlight-fill: #00ACC1; /* Medium teal color for the highlight */
+    -fx-min-height: 25;
+    -fx-pref-height: 25;
+}
+.text-field:hover {
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.text-field:focused {
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-background-radius: 0;
+    -fx-border-insets: 0 0 -1 0;
+    -fx-border-width: 1;
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-min-height: 25;
+    -fx-pref-height: 25;
+}
+.combo-box .list-cell:selected {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.combo-box:hover {
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-cursor: HAND;
+}
+.combo-box:focused {
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.combo-box-base > .arrow-button {
+    -fx-padding: 0 6;
+}
+.combo-box-base > .arrow-button > .arrow {
+    -fx-background-color: #333333; /* Dark gray color for the arrow */
+    -fx-background-insets: 0;
+    -fx-padding: 2 4;
+    -fx-shape: "M 0 0 H 7 L 3.5 4 z";
+}
+.combo-box .list-view {
+    -fx-background-radius: 0;
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-border-width: 0;
+    -fx-padding: 1;
+}
+
+/* ChoiceBox */
+.choice-box {
+    -fx-background-radius: 0;
+    -fx-border-insets: 0 0 -1 0;
+    -fx-border-width: 1;
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-min-height: 25;
+    -fx-pref-height: 25;
+}
+.choice-box:hover {
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-cursor: HAND;
+}
+.choice-box:focused {
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+
+/* ListCell */
+.list-cell {
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-min-height: 18;
+    -fx-pref-height: 18;
+    -fx-padding: 0 0 0 3;
+}
+.list-cell:hover {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-cursor: HAND;
+}
+.list-cell:pressed {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.list-cell:selected {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+
+/* ListView */
+.list-view {
+    -fx-background-radius: 0;
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-border-width: 1;
+    -fx-padding: 1;
+}
+.list-view:hover {
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-padding: 0;
+    -fx-background-insets: 1 1 0 1;
+}
+.list-view:focused {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-padding: 0 0 1 0;
+    -fx-background-insets: 1;
+}
+
+/* Button Styles */
+.cancel-button {
+    -fx-background-color: #F44336; /* Red color for cancel buttons */
+    -fx-text-fill: white;
+    -fx-border-color: #D32F2F;
+    -fx-border-width: 1;
+}
+.cancel-button:hover {
+    -fx-background-color: #D32F2F;
+}
+.cancel-button:pressed {
+    -fx-background-color: #B71C1C;
+}
+
+.clear-button {
+    -fx-background-color: #FFC107; /* Amber color for clear buttons */
+    -fx-text-fill: black;
+    -fx-border-color: #FFA000;
+    -fx-border-width: 1;
+}
+.clear-button:hover {
+    -fx-background-color: #FFA000;
+}
+.clear-button:pressed {
+    -fx-background-color: #FF8F00;
+}
+
+.submit-button, .proceed-button {
+    -fx-background-color: #4CAF50; /* Green color for submit and proceed buttons */
+    -fx-text-fill: white;
+    -fx-border-color: #388E3C;
+    -fx-border-width: 1;
+}
+.submit-button:hover, .proceed-button:hover {
+    -fx-background-color: #388E3C;
+}
+.submit-button:pressed, .proceed-button:pressed {
+    -fx-background-color: #2E7D32;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+    -fx-highlight-fill: #00ACC1; /* Medium teal color for the highlight */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.text-area:hover {
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+}
+.text-area:focused {
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.text-area .content {
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.text-area .scroll-bar {
+    -fx-background-insets: 0 -0.5 0.5 0;
+}
+.text-area .scroll-bar .thumb {
+    -fx-background-insets: 0 2 0 2;
+}
+
+/* ScrollBar */
+.scroll-bar {
+    -fx-background-radius: 0;
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.scroll-bar:vertical {
+    -fx-background-radius: 0;
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.scroll-bar > .decrement-button {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-cursor: HAND;
+}
+.scroll-bar .decrement-button,
+.scroll-bar .increment-button {
+    -fx-cursor: HAND;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar .decrement-button:hover,
+.scroll-bar .increment-button:hover {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #007B83;
+    -fx-background-radius: 0;
+    -fx-cursor: HAND;
+}
+
+/* Menu */
+.menu-bar {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the background */
+    -fx-border-width: 0;
+}
+.menu-bar .menu-button {
+    -fx-background: #00ACC1; /* Medium teal color for the background */
+    -fx-text-fill: #FAFAFA; /* Light neutral color for the text */
+    -fx-min-height: 20;
+    -fx-pref-height: 20;
+    -fx-padding: 0 5 0 5;
+    -fx-cursor: HAND;
+}
+.menu-item {
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.menu-item:hover {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-cursor: HAND;
+}
+.menu-item:pressed {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-cursor: HAND;
+}
+.context-menu {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-border-width: 0;
+    -fx-padding: 0 0 -1 0;
+}
+
+/* Tab */
+.tab-pane {
+    -fx-background-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-color: transparent;
+    -fx-background-insets: 25.5 0 0 0;
+}
+.tab {
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+    -fx-min-height: 20;
+    -fx-pref-height: 20;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #AFB1B3;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0.0;
+}
+
+/* TitledPane */
+.titled-pane {
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+    -fx-label-padding: 0 0 -7 0;
+    -fx-background-color: transparent;
+}
+.titled-pane .title {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-pref-height: 14;
+}
+.titled-pane .content {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the background */
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-border-radius: 0;
+    -fx-border-width: 3 2 2 2;
+}
+
+/* TableView */
+.table-view:focused {
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-border-color: #00ACC1; /* Medium teal color for the border */
+    -fx-background-insets: 1;
+    -fx-background-radius: 0;
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.table-view .column-header-background {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+    -fx-background-radius: 0;
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: #007B83; /* Modern teal color for the border */
+}
+.table-view .column-resize-line {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-pref-width: 1;
+}
+.table-row-cell:hover {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.table-row-cell:pressed {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.table-view .column-header .label {
+    -fx-alignment: center-left;
+    -fx-cursor: HAND;
+}
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+.table-view .column-drag-header {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+
+/* Tooltip */
+.tooltip {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+    -fx-padding: 5;
+}
+
+/* DatePicker Arrow Button */
+.date-picker .arrow-button {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the arrow */
+}
+.date-picker .cell {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+    -fx-text-fill: #333333; /* Dark gray color for the text */
+}
+.date-picker .cell:hover {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.date-picker .cell:focused {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.date-picker .selected {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-text-fill: #FAFAFA; /* Light neutral color for the text */
+}
+.date-picker .selected:focused {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-text-fill: #FAFAFA; /* Light neutral color for the text */
+}
+.date-picker-popup {
+    -fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+}
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: #FAFAFA; /* Light neutral color for the text */
+}
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: #007B83; /* Modern teal color for the text */
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the arrows */
+}
+
+/* Spinner Arrow Buttons */
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #00ACC1; /* Medium teal color for the background */
+    -fx-background-radius: 0;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    -fx-background-color: #E0F7FA; /* Light teal color for the background */
+}
+
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: #FAFAFA; /* Light neutral color for the arrows */
+}
+
+/* Tab Header Area */
+.tab-pane .tab-header-area {
+    visibility: hidden;
+    -fx-max-height: 0;
+    -fx-padding: 0;
+    -fx-opacity: 0;
+}
+
+.submit-button {
+    -fx-background-color: #4CAF50; /* Green color */
+    -fx-text-fill: white;
+    -fx-border-color: #388E3C; /* Darker green for the border */
+    -fx-border-width: 1;
+}
+.submit-button:hover {
+    -fx-background-color: #388E3C; /* Darker green on hover */
+}
+.submit-button:pressed {
+    -fx-background-color: #2E7D32; /* Even darker green when pressed */
+}
+
+.proceed-button {
+    -fx-background-color: #2196F3; /* Blue color */
+    -fx-text-fill: white;
+    -fx-border-color: #1976D2; /* Darker blue for the border */
+    -fx-border-width: 1;
+}
+.proceed-button:hover {
+    -fx-background-color: #1976D2; /* Darker blue on hover */
+}
+.proceed-button:pressed {
+    -fx-background-color: #1565C0; /* Even darker blue when pressed */
+}
+
+.clear-button {
+    -fx-background-color: #FFC107; /* Amber color */
+    -fx-text-fill: black;
+    -fx-border-color: #FFA000; /* Darker amber for the border */
+    -fx-border-width: 1;
+}
+.clear-button:hover {
+    -fx-background-color: #FFA000; /* Darker amber on hover */
+}
+.clear-button:pressed {
+    -fx-background-color: #FF8F00; /* Even darker amber when pressed */
+}
+
+.cancel-button {
+    -fx-background-color: #F44336; /* Red color */
+    -fx-text-fill: white;
+    -fx-border-color: #D32F2F; /* Darker red for the border */
+    -fx-border-width: 1;
+}
+.cancel-button:hover {
+    -fx-background-color: #D32F2F; /* Darker red on hover */
+}
+.cancel-button:pressed {
+    -fx-background-color: #B71C1C; /* Even darker red when pressed */
+}
+
+.close-button {
+    -fx-background-color: #9E9E9E; /* Gray color */
+    -fx-text-fill: white;
+    -fx-border-color: #757575; /* Darker gray for the border */
+    -fx-border-width: 1;
+}
+.close-button:hover {
+    -fx-background-color: #757575; /* Darker gray on hover */
+}
+.close-button:pressed {
+    -fx-background-color: #616161; /* Even darker gray when pressed */
+}
+.back-button {
+    -fx-background-color: #455A64; /* Darker blue-gray color */
+    -fx-text-fill: white;
+    -fx-border-color: #37474F; /* Even darker blue-gray for the border */
+    -fx-border-width: 1;
+}
+.back-button:hover {
+    -fx-background-color: #37474F; /* Darker blue-gray on hover */
+}
+.back-button:pressed {
+    -fx-background-color: #263238; /* Even darker blue-gray when pressed */
+}
+
+
+
+

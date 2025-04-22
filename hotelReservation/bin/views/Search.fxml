@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_LEFT" stylesheets="@../application/admin.css" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <Label text="Search Reservations" styleClass="header-label" />
+
+    <!-- Search Bar -->
+    <HBox spacing="10">
+        <TextField fx:id="searchField" promptText="Enter phone, email, first name, or last name" />
+    </HBox>
+
+    <!-- Search Results Table -->
+    <TableView fx:id="resultsTableView">
+        <columns>
+            <TableColumn fx:id="reservationIdColumn" text="Reservation ID" />
+            <TableColumn fx:id="clientNameColumn" text="Client Name" />
+            <TableColumn fx:id="clientEmailColumn" text="Client Email" />
+            <TableColumn fx:id="clientPhoneColumn" text="Client Phone" />
+        </columns>
+    </TableView>
+</VBox>
